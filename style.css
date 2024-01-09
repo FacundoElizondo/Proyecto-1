@@ -903,3 +903,9 @@ footer img {
         width: 350px;
     }
 }
+
+@media screen and (max-width: 430px){
+    .tricaja3 article img{
+        width: 80%;
+    }
+}
