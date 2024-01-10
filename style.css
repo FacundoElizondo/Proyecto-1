@@ -34,7 +34,7 @@ body {
 section {
     padding-bottom: 5%;
     border-bottom: solid var(--line-color) 1px;
-    margin: 5% 15%;
+    margin: 5% 12%;
 }
 
 .subtitulo-rosa {
@@ -140,7 +140,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 5% 15%;
+    margin: 5% 12%;
     padding-bottom: 5%;
     border-bottom: solid var(--line-color) 1px;
     gap: 10px;
