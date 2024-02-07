@@ -34,7 +34,7 @@ body {
 section {
     padding-bottom: 5%;
     border-bottom: solid var(--line-color) 1px;
-    margin: 5% 12%;
+    margin: 5% 15%;
 }
 
 .subtitulo-rosa {
@@ -127,10 +127,10 @@ header {
     cursor: pointer;
 }
 
-.nav-nav i{
+.nav-nav i {
     display: none;
     color: var(--font-variant-color);
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 
@@ -140,7 +140,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 5% 12%;
+    margin: 5% 15%;
     padding-bottom: 5%;
     border-bottom: solid var(--line-color) 1px;
     gap: 10px;
@@ -250,6 +250,8 @@ h2 span {
 .whatido {
     padding-bottom: 8%;
     border-bottom: solid var(--line-color) 1px;
+    position: relative;
+     overflow: hidden; 
 }
 
 .wid-text {
@@ -272,20 +274,22 @@ h2 span {
 /* cards */
 .tarjetas {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 2.5%;
-    gap: 35px;
-    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
 }
 
 .tricaja {
     display: flex;
-    gap: 35px;
-    flex-wrap: wrap;
-}
+    gap: 60px;
+    padding-left: 40px;
+    width: 600%;
+    transition: all .5s ease;
+    }
 
 .tricaja article {
-    width: 300px;
+    width: 290px;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -306,7 +310,24 @@ h2 span {
     padding-left: 15px;
 }
 
+.prev,
+.next {
+    font-size: 40px;
+    color: var(--font-variant-color);
+    position: absolute;
+    cursor: pointer;
+}
 
+.prev {
+    left: 0px;
+    transform: translateY(100px);
+     display: none;
+}
+
+.next {
+    right: 0px;
+    transform: translateY(100px);
+}
 
 /* seccion portfolio */
 
@@ -345,6 +366,7 @@ h2 span {
     display: flex;
     gap: 35px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .tricaja2 article {
@@ -376,6 +398,58 @@ h2 span {
     gap: 20px;
 }
 
+/* para js */
+
+.prueba-padre{
+    display: none;
+}
+
+.prueba{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.prueba p{
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--secondary-color);
+}
+
+.git {
+    transform: translateX(40%);
+    display: inline;
+}
+
+.git i {
+    color: var(--font-variant-color);
+    font-size: 40px;
+}
+
+.tarjeta-texto i:hover {
+    cursor: pointer;
+}
+
+.sabermas {
+    color: var(--font-variant-color);
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+
+.close-appear {
+    display: block;
+    background-color: var(--font-variant-color);
+    height: 40px;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 9px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transform: translateX(33%);
+}
 
 
 /* seccion resume */
@@ -426,13 +500,14 @@ h2 span {
     color: var(--font-variant-color);
 }
 
-.resume-nav i{
+.resume-nav i {
     color: var(--font-variant-color);
     display: none;
 }
+
 /* timelines */
 
-.timeline-padre { 
+.timeline-padre {
     display: flex;
     margin-right: 9%;
     justify-content: space-between;
@@ -695,7 +770,7 @@ h2 span {
     flex-direction: row;
     justify-content: space-between;
     margin-right: 9%;
-    gap:30px    
+    gap: 30px;
 }
 
 /* caja izquierda */
@@ -829,83 +904,96 @@ footer img {
 
 /* MEDIA QUERYS */
 
-@media screen and (max-width: 1060px){
-    .nav-nav li{
+@media screen and (max-width: 1360px) {
+
+    section,
+    main {
+        margin: 5% 12%;
+    }
+
+}
+
+@media screen and (max-width: 1060px) {
+    .nav-nav li {
         display: none;
     }
 
-    .nav-nav i{
+    .nav-nav i {
         display: block;
         padding-right: 150px;
     }
 
-    main{
+    main {
         justify-content: center;
     }
 
-    .timeline-padre{
-       flex-direction: column;
+    .timeline-padre {
+        flex-direction: column;
     }
 
-    .contacto-padre{
+    .contacto-padre {
         justify-content: center;
     }
 
-    .wid-text{
+    .wid-text {
         align-items: center;
     }
-    .tricaja, .tricaja2, .tricaja3{
+
+    .tricaja,
+    .tricaja2,
+    .tricaja3 {
         justify-content: center;
     }
 
-    .blog-cards{
+    .blog-cards {
         margin-top: 40px;
     }
 }
 
-@media screen and (max-width: 800px){
-    .nav-nav i{
+@media screen and (max-width: 800px) {
+    .nav-nav i {
         display: block;
         padding-right: 80px;
     }
 
-    .resume-nav .not-selected{
+    .resume-nav .not-selected {
         display: none;
     }
 
-    .resume-nav{
-        margin-right: 100px ;
+    .resume-nav {
+        margin-right: 100px;
         padding-right: 0;
         position: relative;
     }
 
-    .selected{
+    .selected {
         width: 100%;
     }
 
-    .resume-nav i{
+    .resume-nav i {
         display: block;
         position: absolute;
         right: 30px;
     }
 
-    .resume-nav i:hover{
+    .resume-nav i:hover {
         cursor: pointer;
     }
 }
 
-@media screen and (max-width: 500px){
-    .nav-nav i{
+@media screen and (max-width: 500px) {
+    .nav-nav i {
         padding-right: 0;
     }
 
-    .tl-cards, .tl-cards2{
+    .tl-cards,
+    .tl-cards2 {
         width: 350px;
     }
 }
 
-@media screen and (max-width: 430px){
-    .tricaja3 article img{
+@media screen and (max-width: 430px) {
+    .tricaja3 article img {
         width: 80%;
     }
 }

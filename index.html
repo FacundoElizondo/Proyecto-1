@@ -31,7 +31,7 @@
                     <li class="buynow shade1"><a href="#">BUY NOW</a></li>
                     <i class="fa-solid fa-bars"></i>
                 </ul>
-                
+
             </nav>
         </div>
     </header>
@@ -68,8 +68,9 @@
                 </div>
             </div>
         </div>
-        <div class="padres imagen-main"><img class="shade1"
-                src="./Imagenes/Imagen de WhatsApp 2023-12-29 a las 19.52.08_fff31522.jpg" alt="Foto">
+        <div class="padres imagen-main">
+            <img id="img" class="shade1" src="./Imagenes/Imagen de WhatsApp 2023-12-29 a las 19.52.08_fff31522.jpg"
+                alt="Foto">
         </div>
     </main>
 
@@ -96,9 +97,6 @@
                     <h3>App Development</h3>
                     <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                 </article>
-            </div>
-
-            <div class="tricaja">
                 <article class="shade1">
                     <i class="fa-brands fa-twitch"></i>
                     <h3>Mobile App</h3>
@@ -115,6 +113,9 @@
                     <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence.</p>
                 </article>
             </div>
+            <div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+
         </div>
     </section>
 
@@ -127,26 +128,56 @@
         <div class="tarjetas-imgs">
             <div class="tricaja2">
                 <article class="shade1">
-                    <img src="./Imagenes/Development telefono.jpg" alt="Dev">
-                    <div class="tarjeta-texto">
-                        <span>
-                            <p class="subtitulo-rosa">DEVELOPMENT</p>
-                            <p class="subtitulo-nro">600</p>
-                        </span>
-                        <p class="suelto">The services provide for design</p>
+                    <div class="tarjeta">
+                        <img src="./Imagenes/Development telefono.jpg" alt="Dev">
+                        <div class="tarjeta-texto" id="prueba">
+                            <span>
+                                <p class="subtitulo-rosa">DEVELOPMENT</p>
+                                <p class="subtitulo-nro">600</p>
+                            </span>
+                            <p class="suelto">The services provide for design</p>
+                            <p class="sabermas">Know more</p>
+                        </div>
+                    </div>
+                    <div id="gitDiv" class="prueba-padre">
+                        <div class="prueba">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia nostrum dolor
+                                perferendis ullam error ea voluptatibus? Odio, non? Tempora, aliquam rem adipisci
+                                doloremque sed quae iure ipsa commodi consectetur.</p>
+                            <p>Know more about this in:</p>
+                            <a class="git" href="https://github.com/FacundoElizondo/Proyecto-1" target="_blank"><i id="gitIcon"
+                                    class="fa-brands fa-github"></i></a>
+                            <button class="close">Close</button>
+                        </div>
                     </div>
                 </article>
+
                 <article class="shade1">
-                    <img src="./Imagenes/Application telefono.jpg" alt="Burger">
-                    <div class="tarjeta-texto">
-                        <span>
-                            <p class="subtitulo-rosa">APPLICATION</p>
-                            <p class="subtitulo-nro">750</p>
-                        </span>
-                        <p class="suelto">Mobile app landing design & app maintain</p>
+                    <div class="tarjeta">
+                        <img src="./Imagenes/Application telefono.jpg" alt="Burger">
+                        <div class="tarjeta-texto">
+                            <span>
+                                <p class="subtitulo-rosa">APPLICATION</p>
+                                <p class="subtitulo-nro">750</p>
+                            </span>
+                            <p class="suelto">Mobile app landing design & app maintain</p>
+                            <p class="sabermas">Know more</p>
+                        </div>
                     </div>
+                    <div id="gitDiv" class="prueba-padre">
+                        <div class="prueba">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia nostrum dolor
+                                perferendis ullam error ea voluptatibus? Odio, non? Tempora, aliquam rem adipisci
+                                doloremque sed quae iure ipsa commodi consectetur.</p>
+                            <p>Know more about this in:</p>
+                            <a class="git" href="https://github.com/FacundoElizondo/Proyecto-1" target="_blank"><i id="gitIcon"
+                                    class="fa-brands fa-github"></i></a>
+                            <button class="close">Close</button>
+                        </div>
                 </article>
+
                 <article class="shade1">
+                    <div class="tarjeta">
                     <img src="./Imagenes/photoshop.jpg" alt="Photoshop">
                     <div class="tarjeta-texto">
                         <span>
@@ -154,12 +185,25 @@
                             <p class="subtitulo-nro">630</p>
                         </span>
                         <p class="suelto">Logo design creativity & Application</p>
+                        <p class="sabermas">Know more</p>
+                    </div>
+                </div>
+                <div id="gitDiv" class="prueba-padre">
+                    <div class="prueba">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia nostrum dolor
+                            perferendis ullam error ea voluptatibus? Odio, non? Tempora, aliquam rem adipisci
+                            doloremque sed quae iure ipsa commodi consectetur.</p>
+                        <p>Know more about this in:</p>
+                        <a class="git" href="https://github.com/FacundoElizondo/Proyecto-1" target="_blank"><i id="gitIcon"
+                                class="fa-brands fa-github"></i></a>
+                        <button class="close">Close</button>
                     </div>
                 </article>
             </div>
 
             <div class="tricaja2">
                 <article class="shade1">
+                    <div class="tarjeta">
                     <img src="./Imagenes/figma.jpg" alt="figma img">
                     <div class="tarjeta-texto">
                         <span>
@@ -167,9 +211,23 @@
                             <p class="subtitulo-nro">360</p>
                         </span>
                         <p class="suelto">Mobile app landing design & Services</p>
+                        <p class="sabermas">Know more</p>
+                    </div>
+                </div>
+                <div id="gitDiv" class="prueba-padre">
+                    <div class="prueba">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia nostrum dolor
+                            perferendis ullam error ea voluptatibus? Odio, non? Tempora, aliquam rem adipisci
+                            doloremque sed quae iure ipsa commodi consectetur.</p>
+                        <p>Know more about this in:</p>
+                        <a class="git" href="https://github.com/FacundoElizondo/Proyecto-1" target="_blank"><i id="gitIcon"
+                                class="fa-brands fa-github"></i></a>
+                        <button class="close">Close</button>
                     </div>
                 </article>
+
                 <article class="shade1">
+                    <div class="tarjeta">
                     <img src="./Imagenes/Design1.jpg" alt="web design img">
                     <div class="tarjeta-texto">
                         <span>
@@ -177,9 +235,23 @@
                             <p class="subtitulo-nro">280</p>
                         </span>
                         <p class="suelto">Design For Technology and services</p>
+                        <p class="sabermas">Know more</p>
+                    </div>
+                </div>
+                <div id="gitDiv" class="prueba-padre">
+                    <div class="prueba">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia nostrum dolor
+                            perferendis ullam error ea voluptatibus? Odio, non? Tempora, aliquam rem adipisci
+                            doloremque sed quae iure ipsa commodi consectetur.</p>
+                        <p>Know more about this in:</p>
+                        <a class="git" href="https://github.com/FacundoElizondo/Proyecto-1" target="_blank"><i id="gitIcon"
+                                class="fa-brands fa-github"></i></a>
+                        <button class="close">Close</button>
                     </div>
                 </article>
+
                 <article class="shade1">
+                    <div class="tarjeta">
                     <img src="./Imagenes/Design2.jpg" alt="design img">
                     <div class="tarjeta-texto">
                         <span>
@@ -187,6 +259,18 @@
                             <p class="subtitulo-nro">690</p>
                         </span>
                         <p class="suelto">App for technology and services</p>
+                        <p class="sabermas">Know more</p>
+                    </div>
+                </div>
+                <div id="gitDiv" class="prueba-padre">
+                    <div class="prueba">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia nostrum dolor
+                            perferendis ullam error ea voluptatibus? Odio, non? Tempora, aliquam rem adipisci
+                            doloremque sed quae iure ipsa commodi consectetur.</p>
+                        <p>Know more about this in:</p>
+                        <a class="git" href="https://github.com/FacundoElizondo/Proyecto-1" target="_blank"><i id="gitIcon"
+                                class="fa-brands fa-github"></i></a>
+                        <button class="close">Close</button>
                     </div>
                 </article>
             </div>
@@ -262,7 +346,7 @@
                     <h2>Job Experience</h2>
                 </div>
 
-                
+
                 <div class="timeline-group">
                     <div class="tl-card-container">
                         <div class="tl-cards shade1">
@@ -370,25 +454,27 @@
                     </span>
                 </div>
             </div>
-
-            <div class="input shade1">
-                <div class="horizontales">
-                    <div class="arreglo">
-                        <label for="name">YOUR NAME</label>
-                        <input type="text" name="Name" id="name">
+            <div>
+                <form id="form" class="input shade1">
+                    <div class="horizontales">
+                        <div class="arreglo">
+                            <label for="name">YOUR NAME</label>
+                            <input id="name" type="text" name="Name" id="name">
+                        </div>
+                        <div class="arreglo">
+                            <label for="number">PHONE NUMBER</label>
+                            <input id="phone" type="number" name="Number" id="number">
+                        </div>
                     </div>
-                    <div class="arreglo">
-                        <label for="number">PHONE NUMBER</label>
-                        <input type="number" name="Number" id="number">
-                    </div>
-                </div>
-                <label for="email">EMAIL</label>
-                <input type="email" name="Mail" id="email">
-                <label for="subject">SUBJECT</label>
-                <input type="text" name="Subject" id="subject">
-                <label for="message">YOUR MESSAGE</label>
-                <input type="text" name="Message" id="message" class="message"></textarea>
-                <button class="shade2">SEND MESSAGE</button>
+                    <label for="email">EMAIL</label>
+                    <input id="mail" type="email" name="Mail" id="email">
+                    <label for="subject">SUBJECT</label>
+                    <input id="subject" type="text" name="Subject" id="subject">
+                    <label for="message">YOUR MESSAGE</label>
+                    <input id="texto" type="text" name="Message" id="message" class="message">
+                    <button id="sendMessage" class="shade2">SEND MESSAGE</button>
+                </form>
+                <div id="respuesta"></div>
             </div>
         </div>
     </section>
@@ -400,6 +486,8 @@
             <p class="rainbow">Rainbow-Themes.</p>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
